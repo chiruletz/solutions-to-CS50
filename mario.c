@@ -1,12 +1,4 @@
-/*******
-*
-*   Donald Steinert
-*
-*   CS50 - Pset1 - mario
-*
-*   prints a half pyramid no higher than 23 blocks
-*
-*******/
+
 
 #include <stdio.h>
 #include <cs50.h>
@@ -15,15 +7,14 @@ int main(void)
 {
    int height;
 
-    // prompts user for pyramid height between 1 and 23
     do
     {
-        printf("Please specify the height of the pyramid: ");
+        printf("Specificati inaltimea piramidei: ");
         height = GetInt();
     }
     while (height < 0 || height > 23);
 
-    // for loops specifying number of spaces and hashes per line
+
     for (int line = 0; line < height; line++)
     {
         for (int spaces = height - line; spaces > 1; spaces--)
